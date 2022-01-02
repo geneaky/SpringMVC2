@@ -11,6 +11,7 @@ public class BasicController {
 
   @GetMapping("text-basic")
   public String textBasic(Model model) {
+
     model.addAttribute("data", "Hello, String!");
     return "basic/text-basic";
   }

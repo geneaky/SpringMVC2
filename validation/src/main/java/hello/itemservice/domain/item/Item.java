@@ -5,8 +5,11 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import lombok.Data;
 import org.hibernate.validator.constraints.Range;
+import org.hibernate.validator.constraints.ScriptAssert;
 
 @Data
+//@ScriptAssert(lang="javascript", script="_this.price * _this.quantity >= 10000",message = "10000원 넘게 입력해주세요")
+//기능적으로 사용하기 불편함 그냥 자바 코드로 validation하는게 더 편한듯
 public class Item {
 
     private Long id;

@@ -17,6 +17,6 @@ public class ItemSaveForm {
   private Integer price;
 
   @NotNull
-  @Max(99999)
+  @Max(9999)
   private Integer quantity;
 }

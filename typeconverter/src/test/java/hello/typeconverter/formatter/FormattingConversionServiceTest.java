@@ -31,5 +31,4 @@ public class FormattingConversionServiceTest {
     assertThat(convert).isEqualTo("1,000");
     assertThat(convert1).isEqualTo(1000);
   }
-
 }
